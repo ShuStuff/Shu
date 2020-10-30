@@ -13,6 +13,7 @@
 		3BBE9C3C25491FE000E26943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBE9C3B25491FE000E26943 /* Preview Assets.xcassets */; };
 		3BBE9C4725491FE000E26943 /* ShuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE9C4625491FE000E26943 /* ShuTests.swift */; };
 		3BBE9C5225491FE000E26943 /* ShuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE9C5125491FE000E26943 /* ShuUITests.swift */; };
+		F6ECB22823BB786FDDA7A0C9 /* Pods_Shu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152CF158D8539EF9915908B1 /* Pods_Shu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		152CF158D8539EF9915908B1 /* Pods_Shu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBE9C3125491FDE00E26943 /* Shu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBE9C3425491FDE00E26943 /* ShuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuApp.swift; sourceTree = "<group>"; };
 		3BBE9C3625491FDE00E26943 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		3BBE9C4D25491FE000E26943 /* ShuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBE9C5125491FE000E26943 /* ShuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuUITests.swift; sourceTree = "<group>"; };
 		3BBE9C5325491FE000E26943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919D51F406D5A98626672FB3 /* Pods-Shu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shu.debug.xcconfig"; path = "Target Support Files/Pods-Shu/Pods-Shu.debug.xcconfig"; sourceTree = "<group>"; };
+		DA05728C7EAF8E46B5B92BF0 /* Pods-Shu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shu.release.xcconfig"; path = "Target Support Files/Pods-Shu/Pods-Shu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6ECB22823BB786FDDA7A0C9 /* Pods_Shu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,8 @@
 				3BBE9C4525491FE000E26943 /* ShuTests */,
 				3BBE9C5025491FE000E26943 /* ShuUITests */,
 				3BBE9C3225491FDE00E26943 /* Products */,
+				5AA7F35A741893A8A1670240 /* Pods */,
+				CA39FC94E072C2FB9E95BFC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,24 @@
 			path = ShuUITests;
 			sourceTree = "<group>";
 		};
+		5AA7F35A741893A8A1670240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				919D51F406D5A98626672FB3 /* Pods-Shu.debug.xcconfig */,
+				DA05728C7EAF8E46B5B92BF0 /* Pods-Shu.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA39FC94E072C2FB9E95BFC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152CF158D8539EF9915908B1 /* Pods_Shu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BBE9C5625491FE000E26943 /* Build configuration list for PBXNativeTarget "Shu" */;
 			buildPhases = (
+				4969470C2FBFE1E858B162EE /* [CP] Check Pods Manifest.lock */,
 				3BBE9C2D25491FDE00E26943 /* Sources */,
 				3BBE9C2E25491FDE00E26943 /* Frameworks */,
 				3BBE9C2F25491FDE00E26943 /* Resources */,
+				E1F10BA6DF564BF6200F865C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4969470C2FBFE1E858B162EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F10BA6DF564BF6200F865C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shu/Pods-Shu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shu/Pods-Shu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shu/Pods-Shu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BBE9C2D25491FDE00E26943 /* Sources */ = {
@@ -414,6 +483,7 @@
 		};
 		3BBE9C5725491FE000E26943 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 919D51F406D5A98626672FB3 /* Pods-Shu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +506,7 @@
 		};
 		3BBE9C5825491FE000E26943 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA05728C7EAF8E46B5B92BF0 /* Pods-Shu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
