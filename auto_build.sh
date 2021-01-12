@@ -4,8 +4,8 @@
 PROJECT_DIR_PATH=$(pwd)
 
 # 切换到宿主机环境
-scp ${PROJECT_DIR_PATH} jlgl-ios@172.23.2.52:~/Documents/JenkinsContainer/
-ssh -tt jlgl-ios@172.23.2.52
+# scp ${PROJECT_DIR_PATH} jlgl-ios@172.23.2.52:~/Documents/JenkinsContainer/
+# ssh -tt jlgl-ios@172.23.2.52
 
 # 宿主机环境项目信息
 PROJECT_WORKSPACE_PATH="./Example"
