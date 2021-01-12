@@ -37,7 +37,7 @@ echo "************** debug info *********************"
 echo ""
 echo "============= Do some prepare work =============="
 git pull origin master
-cd ${PROJECT_WORKSPACE_PATH}
+# cd ${PROJECT_WORKSPACE_PATH}
 pod install
 echo "================ work finished =================="
 
